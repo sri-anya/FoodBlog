@@ -3,7 +3,9 @@ import Divider from './Divider'
 
 const Navbar = () => {
     return (
+
         <div className='sticky top-0 z-30'>
+            <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
             <div className='Header flex justify-evenly items-center py-8 '>
                 <div className="logo text-3xl cursor-pointer">Sam's Food</div>
                 <div className="options">

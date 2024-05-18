@@ -3,7 +3,8 @@ import Divider from './Divider'
 
 const SubscriptionForm = () => {
     return (
-        <>
+        <>  
+             <Divider />
             <div className='flex justify-center items-center'>
                 <div className='justify-center'>
                     <div className='flex justify-center my-6'><img src="/mail.svg" alt="" /></div>
