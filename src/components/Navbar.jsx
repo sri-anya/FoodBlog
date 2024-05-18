@@ -3,8 +3,8 @@ import Divider from './Divider'
 
 const Navbar = () => {
     return (
-        <>
-            <div className='Header flex justify-evenly items-center py-8'>
+        <div className='sticky top-0 z-30'>
+            <div className='Header flex justify-evenly items-center py-8 '>
                 <div className="logo text-3xl cursor-pointer">Sam's Food</div>
                 <div className="options">
                     <ul className='flex gap-8'>
@@ -15,16 +15,16 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="socials">
-                    <ul className='flex gap-3'>
-                        <li className='cursor-pointer'><img src="/facebook.svg" alt="" /></li>
-                        <li className='cursor-pointer'><img src="/instagram.svg" alt="" /></li>
-                        <li className='cursor-pointer'><img src="/youtube.svg" alt="" /></li>
+                    <ul className='flex gap-3 justify-center'>
+                        <a href=""><li className='cursor-pointer'><img src="/facebook.svg" alt="" /></li></a>
+                        <a href=""><li className='cursor-pointer'><img src="/instagram.svg" alt="" /></li></a>
+                        <a href=""><li className='cursor-pointer'><img src="/youtube.svg" alt="" /></li></a>
                     </ul>
                 </div>
 
             </div>
             <Divider />
-        </>
+        </div>
 
     )
 }

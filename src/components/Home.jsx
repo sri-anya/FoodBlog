@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <div>
         <Navbar/>
+        <div className='h-screen w-full'></div>
         <SubscriptionForm/>
         <Footer/>
     </div>

@@ -16,9 +16,9 @@ const SubscriptionForm = () => {
 
                     <div className="socials my-10">
                         <ul className='flex gap-3 justify-center'>
-                            <li className='cursor-pointer'><img src="/facebook.svg" alt="" /></li>
-                            <li className='cursor-pointer'><img src="/instagram.svg" alt="" /></li>
-                            <li className='cursor-pointer'><img src="/youtube.svg" alt="" /></li>
+                            <a href=""><li className='cursor-pointer'><img src="/facebook.svg" alt="" /></li></a>
+                            <a href=""><li className='cursor-pointer'><img src="/instagram.svg" alt="" /></li></a>
+                            <a href=""><li className='cursor-pointer'><img src="/youtube.svg" alt="" /></li></a>
                         </ul>
                     </div>
                 </div>
