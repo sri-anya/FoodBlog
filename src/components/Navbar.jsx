@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <>
             <div className='Header flex justify-evenly items-center py-8'>
-                <div className="logo text-3xl">Sam's Food</div>
+                <div className="logo text-3xl cursor-pointer">Sam's Food</div>
                 <div className="options">
                     <ul className='flex gap-8'>
                         <li className='cursor-pointer'>Home</li>
@@ -16,9 +16,9 @@ const Navbar = () => {
                 </div>
                 <div className="socials">
                     <ul className='flex gap-3'>
-                        <li className='cursor-pointer'><img src="/vite.svg" alt="" /></li>
-                        <li className='cursor-pointer'><img src="/vite.svg" alt="" /></li>
-                        <li className='cursor-pointer'><img src="/vite.svg" alt="" /></li>
+                        <li className='cursor-pointer'><img src="/facebook.svg" alt="" /></li>
+                        <li className='cursor-pointer'><img src="/instagram.svg" alt="" /></li>
+                        <li className='cursor-pointer'><img src="/youtube.svg" alt="" /></li>
                     </ul>
                 </div>
 
