@@ -1,5 +1,6 @@
 import React from 'react'
 import Divider from './Divider'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -10,10 +11,10 @@ const Navbar = () => {
                 <div className="logo text-3xl cursor-pointer">Sam's Food</div>
                 <div className="options">
                     <ul className='flex gap-8'>
-                        <li className='cursor-pointer'>Home</li>
-                        <li className='cursor-pointer'>All Recipes</li>
-                        <li className='cursor-pointer'>About Me</li>
-                        <li className='cursor-pointer'>Contact</li>
+                        <Link className='cursor-pointer' to="/">Home</Link>
+                        <Link className='cursor-pointer' to="/recipe-container">All Recipes</Link>
+                        <Link className='cursor-pointer' to="/about">About Me</Link>
+                        <Link className='cursor-pointer' to="/contact">Contact</Link>
                     </ul>
                 </div>
                 <div className="socials">
