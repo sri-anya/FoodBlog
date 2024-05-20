@@ -12,7 +12,7 @@ function ErrorPage() {
         <Navbar />
       </header>
       <main> 
-        <h1 className="text-5xl text-red-600 h-[8vh] w-[80vw] text-center mx-auto p-[20vh] bg-[#FDE047]">Whoops! Something went wrong!</h1>
+        <h1 className="text-5xl text-red-600 h-[8vh] w-[80vw] text-center mx-auto p-[20vh] ">Whoops! Something went wrong!</h1>
         <Divider/>
       </main>
     </>
