@@ -8,19 +8,11 @@ import RecipeCard from './RecipeCard'
 const RecipeContainer = () => {
   return (
     <div>
-      <Navbar/>
-      <Subsection image="/cookware.svg" message="About Me"/>
-      <main className='flex flex-wrap mx-10 gap-20 justify-evenly p-10'>
-        <RecipeCard/>
-        <RecipeCard/>
-        <RecipeCard/>
-        <RecipeCard/>
-        <RecipeCard/>
-        <RecipeCard/>
+      <Navbar />
+      <Subsection image="/cookware.svg" message="All Recipes" />
 
-      </main>
-      <SubscriptionForm/>
-      <Footer/>
+      <SubscriptionForm />
+      <Footer />
     </div>
   )
 }
