@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import ErrorPage from './components/ErrorPage';
 import About from "./components/About";
 import RecipeContainer from "./components/RecipeContainer";
+import SingleRecipe from "./components/SingleRecipe";
 
 const routes = [
     {
@@ -23,6 +24,11 @@ const routes = [
     {
         path: "/about-me",
         element: <About />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: "/recipe/:id",
+        element: <SingleRecipe />,
         errorElement: <ErrorPage />
     },
     
