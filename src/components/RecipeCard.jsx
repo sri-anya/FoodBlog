@@ -10,7 +10,6 @@ function getDate() {
 
 const RecipeCard = ({ recipe }) => {
     const [currentDate, setCurrentDate] = useState(getDate());
-    console.log(recipe)
     return (
         <div>
             <Date />

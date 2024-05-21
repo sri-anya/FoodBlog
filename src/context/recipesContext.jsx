@@ -1,29 +1,32 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, createContext } from "react";
 
-const RecipesContext = React.createContext();
+const RecipesContext = createContext();
+
+
 
 function RecipesProvider({ children }) {
-  
-  
-    const [recipes, setRecipes] = useState();
+    const [rec,setRec] = useState(null)
+    const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
-       
+
         const fetchRecipes = async () => {
-            try {
-                const data = await fetch("http://localhost:4000/recipes");
-                const response = await data.json();
-                setRecipes(response);
-            } catch (error) {
-                console.error("Error fetching recipes:", error);
-            }
+          try {
+            const data = await fetch("http://localhost:4000/recipes");
+            const response = await data.json();
+            setRec(response);
+            // rexe.setRec(response);
+         
+    
+          } catch (error) {
+            console.error("Error fetching recipes:", error);
+          }
         };
-
-       
         fetchRecipes();
-    }, []); 
-
-    return <RecipesContext.Provider value={recipes}>{children}</RecipesContext.Provider>;
+      }, []);
+  
+    
+    return <RecipesContext.Provider value={{rec,setRec,isLoaded,setIsLoaded}}>{children}</RecipesContext.Provider>;
 }
 
 export { RecipesContext, RecipesProvider };
