@@ -1,84 +1,102 @@
 {
-    "recipes": [
-      {
-        "id": 1,
-        "title": "Spaghetti Carbonara",
-        "recipe": "Cook spaghetti. In a separate pan, cook pancetta until crispy. Mix eggs, cheese, and pepper in a bowl. Combine hot spaghetti with pancetta and egg mixture, stirring quickly.",
-        "author": "John Doe",
-        "keyImage": "/recipeImages/pancakes.jpg",
-        "category": "Italian"
-      },
-      {
-        "id": 2,
-        "title": "Chicken Tikka Masala",
-        "recipe": "Marinate chicken in yogurt and spices. Grill until cooked. Simmer in a sauce made of tomatoes, cream, and spices.",
-        "author": "Jane Smith",
-        "keyImage": "/recipeImages/pancakes.jpg",
-        "category": "Indian"
-      },
-      {
-        "id": 3,
-        "title": "Vegetable Stir Fry",
-        "recipe": "Heat oil in a wok. Add garlic and ginger. Stir fry vegetables. Add soy sauce and stir until vegetables are tender.",
-        "author": "Alice Johnson",
-        "keyImage": "/recipeImages/pancakes.jpg",
-        "category": "Asian"
-      },
-      {
-        "id": 4,
-        "title": "Beef Tacos",
-        "recipe": "Cook ground beef with taco seasoning. Serve in taco shells with lettuce, cheese, and salsa.",
-        "author": "Bob Brown",
-        "keyImage": "/recipeImages/pancakes.jpg",
-        "category": "Mexican"
-      },
-      {
-        "id": 5,
-        "title": "Pancakes",
-        "recipe": "Mix flour, milk, eggs, and baking powder. Cook on a hot griddle until bubbles form, then flip.",
-        "author": "Chris Green",
-        "keyImage": "/recipeImages/pancakes.jpg",
-        "category": "Breakfast"
-      },
-      {
-        "id": 6,
-        "title": "Caesar Salad",
-        "recipe": "Combine lettuce, croutons, and Parmesan cheese. Toss with Caesar dressing.",
-        "author": "Diane White",
-        "keyImage": "/recipeImages/pancakes.jpg",
-        "category": "Salad"
-      },
-      {
-        "id": 7,
-        "title": "Beef Stew",
-        "recipe": "Brown beef cubes. Add onions, carrots, and potatoes. Simmer in beef broth until tender.",
-        "author": "Evan Black",
-        "keyImage": "/recipeImages/pancakes.jpg",
-        "category": "Stew"
-      },
-      {
-        "id": 8,
-        "title": "Chocolate Cake",
-        "recipe": "Mix flour, cocoa, sugar, and baking powder. Add eggs, milk, and oil. Bake until a toothpick comes out clean.",
-        "author": "Fiona Blue",
-        "keyImage": "/recipeImages/pancakes.jpg",
-        "category": "Dessert"
-      },
-      {
-        "id": 9,
-        "title": "Guacamole",
-        "recipe": "Mash avocados. Mix in lime juice, cilantro, onions, and tomatoes. Season with salt.",
-        "author": "George Red",
-        "keyImage": "/recipeImages/pancakes.jpg",
-        "category": "Appetizer"
-      },
-      {
-        "id": 10,
-        "title": "Grilled Cheese Sandwich",
-        "recipe": "Butter bread slices. Place cheese between slices. Grill until bread is golden and cheese is melted.",
-        "author": "Hannah Gold",
-        "keyImage": "/recipeImages/pancakes.jpg",
-        "category": "Sandwich"
-      }
-    ]
-  }  
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Spaghetti Carbonara",
+      "recipe": "Cook spaghetti. In a separate pan, cook pancetta until crispy. Mix eggs, cheese, and pepper in a bowl. Combine hot spaghetti with pancetta and egg mixture, stirring quickly.",
+      "keyImage": "/recipeImages/pancakes.jpg",
+      "category": "Italian"
+    },
+    {
+      "id": "2",
+      "title": "Chicken Tikka Masala",
+      "recipe": "Marinate chicken in yogurt and spices. Grill until cooked. Simmer in a sauce made of tomatoes, cream, and spices.",
+      "keyImage": "/recipeImages/pancakes.jpg",
+      "category": "Indian"
+    },
+    {
+      "id": "3",
+      "title": "Vegetable Stir Fry",
+      "recipe": "Heat oil in a wok. Add garlic and ginger. Stir fry vegetables. Add soy sauce and stir until vegetables are tender.",
+      "keyImage": "/recipeImages/pancakes.jpg",
+      "category": "Asian"
+    },
+    {
+      "id": "4",
+      "title": "Beef Tacos",
+      "recipe": "Cook ground beef with taco seasoning. Serve in taco shells with lettuce, cheese, and salsa.",
+      "keyImage": "/recipeImages/pancakes.jpg",
+      "category": "Mexican"
+    },
+    {
+      "id": "5",
+      "title": "Pancakes",
+      "recipe": "Mix flour, milk, eggs, and baking powder. Cook on a hot griddle until bubbles form, then flip.",
+      "keyImage": "/recipeImages/pancakes.jpg",
+      "category": "Breakfast"
+    },
+    {
+      "id": "6",
+      "title": "Caesar Salad",
+      "recipe": "Combine lettuce, croutons, and Parmesan cheese. Toss with Caesar dressing.",
+      "keyImage": "/recipeImages/pancakes.jpg",
+      "category": "Salad"
+    },
+    {
+      "id": "7",
+      "title": "Beef Stew",
+      "recipe": "Brown beef cubes. Add onions, carrots, and potatoes. Simmer in beef broth until tender.",
+      "keyImage": "/recipeImages/pancakes.jpg",
+      "category": "Stew"
+    },
+    {
+      "id": "8",
+      "title": "Chocolate Cake",
+      "recipe": "Mix flour, cocoa, sugar, and baking powder. Add eggs, milk, and oil. Bake until a toothpick comes out clean.",
+      "keyImage": "/recipeImages/pancakes.jpg",
+      "category": "Dessert"
+    },
+    {
+      "id": "9",
+      "title": "Guacamole",
+      "recipe": "Mash avocados. Mix in lime juice, cilantro, onions, and tomatoes. Season with salt.",
+      "keyImage": "/recipeImages/pancakes.jpg",
+      "category": "Appetizer"
+    },
+    {
+      "id": "10",
+      "title": "Grilled Cheese Sandwich",
+      "recipe": "Butter bread slices. Place cheese between slices. Grill until bread is golden and cheese is melted.",
+      "keyImage": "/recipeImages/pancakes.jpg",
+      "category": "Sandwich"
+    },
+    {
+      "id": "da6c",
+      "title": "w",
+      "image": "https://ibb.co/hshZZZb",
+      "recipe": "w",
+      "category": "w"
+    },
+    {
+      "id": "4d46",
+      "title": "making tea",
+      "image": "https://ibb.co/hshZZZb",
+      "recipe": "boil water and add a tea bag in that water",
+      "category": "drink"
+    },
+    {
+      "id": "5d8e",
+      "title": "a",
+      "image": "https://ibb.co/hshZZZb",
+      "recipe": "a",
+      "category": "a"
+    },
+    {
+      "id": "a463",
+      "title": "asqsawwqwqww",
+      "image": "https://ibb.co/hshZZZb",
+      "recipe": "wwqqwq",
+      "category": "lunch"
+    }
+  ]
+}

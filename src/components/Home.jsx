@@ -6,40 +6,20 @@ import Background from './Background'
 import Subsection from './Subsection'
 import LatestRecipeContainer from './LatestRecipeContainer'
 import { RecipesContext } from '../context/recipesContext'
+import NewRecipe from './NewRecipe'
 
 
 const Home = () => {
-  const [recipes, setRecipes] = useState();
-  const [isLoaded, setIsLoaded] = useState(false);
-  // const rexe = useContext(RecipesContext);
-  // console.log(rexe)
 
-  useEffect(() => {
-
-    const fetchRecipes = async () => {
-      try {
-        const data = await fetch("http://localhost:4000/recipes");
-        const response = await data.json();
-        setRecipes(response);
-        // rexe.setRec(response);
-        setIsLoaded(!isLoaded)
-
-      } catch (error) {
-        console.error("Error fetching recipes:", error);
-      }
-    };
-
-    fetchRecipes();
-  }, []);
-
-
+  const recipes = useContext(RecipesContext);
 
   return (
     <div>
       <Background />
       <Navbar />
       <Subsection image="/heart.svg" message="Food and family nourish our bodies and souls." secondMessage="Love, Sam" />
-      {isLoaded ? <LatestRecipeContainer heading="Latest Recipes" recipes={recipes.slice(-6)} /> : <h1 className='text-2xl font-semibold text-center p-10 animate-ping'>Loading...</h1>}
+      <NewRecipe />
+      {(recipes.rec).length > 0 ? <LatestRecipeContainer heading="Latest Recipes" recipes={recipes.rec.slice(-6)} /> : <h1 className='text-2xl font-semibold text-center p-10 animate-ping'>Loading...</h1>}
       <SubscriptionForm />
       <Footer />
     </div>

@@ -14,7 +14,6 @@ const RecipeCard = ({ recipe }) => {
     const navigate = useNavigate();
     return (
         <div>
-            <Date />
             <div className="container h-[500] w-[450] relative" onClick={()=>navigate(`/recipe/${recipe.id}`)}>
                 <p className='text-white  absolute top-2 z-10 left-2 text-xs'>{currentDate}</p>
                 <img width="450" height="500" className="object-contain opacity-85 rounded-md relative" src="/recipeImages/pancakes.jpg" alt="" />

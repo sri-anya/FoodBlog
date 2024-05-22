@@ -5,8 +5,8 @@ const RecipesContext = createContext();
 
 
 function RecipesProvider({ children }) {
-    const [rec,setRec] = useState(null)
-    const [isLoaded, setIsLoaded] = useState(false);
+    const [rec,setRec] = useState([])
+    
 
     useEffect(() => {
 
@@ -26,7 +26,7 @@ function RecipesProvider({ children }) {
       }, []);
   
     
-    return <RecipesContext.Provider value={{rec,setRec,isLoaded,setIsLoaded}}>{children}</RecipesContext.Provider>;
+    return <RecipesContext.Provider value={{rec,setRec}}>{children}</RecipesContext.Provider>;
 }
 
 export { RecipesContext, RecipesProvider };
