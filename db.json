@@ -4,14 +4,14 @@
       "id": "1",
       "title": "Spaghetti Carbonara",
       "recipe": "Cook spaghetti. In a separate pan, cook pancetta until crispy. Mix eggs, cheese, and pepper in a bowl. Combine hot spaghetti with pancetta and egg mixture, stirring quickly.",
-      "keyImage": "/recipeImages/pancakes.jpg",
+      "keyImage": "/recipeImages/SpaghettiCarbonara.jpg",
       "category": "Italian"
     },
     {
       "id": "2",
       "title": "Chicken Tikka Masala",
       "recipe": "Marinate chicken in yogurt and spices. Grill until cooked. Simmer in a sauce made of tomatoes, cream, and spices.",
-      "keyImage": "/recipeImages/pancakes.jpg",
+      "keyImage": "/recipeImages/chickenTikkaMasala.jpg",
       "category": "Indian"
     },
     {
@@ -46,7 +46,7 @@
       "id": "7",
       "title": "Beef Stew",
       "recipe": "Brown beef cubes. Add onions, carrots, and potatoes. Simmer in beef broth until tender.",
-      "keyImage": "/recipeImages/pancakes.jpg",
+      "keyImage": "",
       "category": "Stew"
     },
     {
@@ -60,7 +60,7 @@
       "id": "9",
       "title": "Guacamole",
       "recipe": "Mash avocados. Mix in lime juice, cilantro, onions, and tomatoes. Season with salt.",
-      "keyImage": "/recipeImages/pancakes.jpg",
+      "keyImage": "",
       "category": "Appetizer"
     },
     {
@@ -69,34 +69,6 @@
       "recipe": "Butter bread slices. Place cheese between slices. Grill until bread is golden and cheese is melted.",
       "keyImage": "/recipeImages/pancakes.jpg",
       "category": "Sandwich"
-    },
-    {
-      "id": "da6c",
-      "title": "w",
-      "image": "https://ibb.co/hshZZZb",
-      "recipe": "w",
-      "category": "w"
-    },
-    {
-      "id": "4d46",
-      "title": "making tea",
-      "image": "https://ibb.co/hshZZZb",
-      "recipe": "boil water and add a tea bag in that water",
-      "category": "drink"
-    },
-    {
-      "id": "5d8e",
-      "title": "a",
-      "image": "https://ibb.co/hshZZZb",
-      "recipe": "a",
-      "category": "a"
-    },
-    {
-      "id": "a463",
-      "title": "asqsawwqwqww",
-      "image": "https://ibb.co/hshZZZb",
-      "recipe": "wwqqwq",
-      "category": "lunch"
     }
   ]
 }

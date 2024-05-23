@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className='sticky top-0 z-30'>
             <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
             <div className='Header flex justify-evenly items-center py-8 '>
-                <div className="logo text-3xl cursor-pointer">Sam's Food</div>
+                <div className="logo cursor-pointer"><img src="/dp-black.svg" alt="" /></div>
                 <div className="options">
                     <ul className='flex gap-8'>
                         <Link className='cursor-pointer' to="/">Home</Link>

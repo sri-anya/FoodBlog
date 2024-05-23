@@ -15,13 +15,6 @@ const NewRecipe = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(newRecipeData)
-        // const newRecipe = {
-        //     title: newRecipeData.title,
-        //     image: newRecipeData.image,
-        //     recipe: newRecipeData.recipe,
-        //     category: newRecipeData.category
-        // }
         fetch("http://localhost:4000/recipes", {
             method: "POST",
             headers: {
@@ -39,8 +32,6 @@ const NewRecipe = () => {
         const name = event.target.name;
         const value = event.target.value;
         setNewRecipeData({ ...newRecipeData, [name]: value })
-
-
     }
 
     return (
