@@ -12,7 +12,7 @@ const Contact = () => {
             <Navbar />
             <Subsection image="./mail.svg" message="Stay in Touch" />
             <div className="query-form flex gap-6 w-[60vw] mx-auto">
-                <div className="image m-10"><img width="700" height="700" src="/contactPageImage.jpg" alt="" /></div>
+                <div className="image m-10 py-32"><img width="800" height="1000" className='object-fill' src="/contactPageImage.jpg" alt="" /></div>
                 <div className='my-10'>
                     <form className="flex flex-wrap justify-start gap-10 items-center text-center p-6 bg-white shadow-md rounded-lg" action="">
                         <h2 className=' mx-auto font-bold'>For Any Inquiries Contact Me</h2>
