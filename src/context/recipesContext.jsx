@@ -12,7 +12,7 @@ function RecipesProvider({ children }) {
 
         const fetchRecipes = async () => {
           try {
-            const data = await fetch("http://localhost:4000/recipes");
+            const data = await fetch("https://recipes-api-1.onrender.com/recipes");
             const response = await data.json();
             setRec(response);
             // rexe.setRec(response);

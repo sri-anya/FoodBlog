@@ -4,6 +4,7 @@ import { RecipesContext } from '../context/recipesContext';
 
 const NewRecipe = () => {
     const recipes = useContext(RecipesContext);
+    
     const [newRecipeData, setNewRecipeData] = useState({
         title: "",
         keyImage: "",
@@ -22,7 +23,7 @@ const NewRecipe = () => {
             category: newRecipeData.category
         };
 
-        fetch("http://localhost:4000/recipes", {
+        fetch("https://recipes-api-1.onrender.com/recipes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -51,7 +52,7 @@ const NewRecipe = () => {
 
                     <div className="flex flex-col">
                         <label className="mb-2 font-semibold text-gray-700" htmlFor="title">Title:</label>
-                        <input className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" name="title" id="title" onChange={handleChange} value={newRecipeData.title} />
+                        <input className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" name="title" id="title" onChange={handleChange} value={newRecipeData.title} required/>
                     </div>
 
                     <div className="flex flex-col">
