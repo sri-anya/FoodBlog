@@ -23,7 +23,7 @@ const NewRecipe = () => {
             category: newRecipeData.category
         };
 
-        fetch("https://recipes-api-1.onrender.com/recipes", {
+        fetch("http://localhost:4000/recipes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
