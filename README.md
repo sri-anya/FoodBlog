@@ -79,6 +79,12 @@ Contributions are what make the open-source community such an amazing place to l
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
+## Work in Progress
+
+- **Subscription Form**: The subscription form is currently not functional. This feature will allow users to subscribe to our newsletter and receive updates directly in their inbox.
+- **Contact Form**: The contact form is also not functional at the moment. We will enable it soon so users can easily reach out to us with their queries and feedback.
+
+
 ## Contact
 
 For any inquiries or feedback, please reach out through the contact page on the application.

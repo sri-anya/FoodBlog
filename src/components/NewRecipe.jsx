@@ -3,7 +3,8 @@ import Divider from './Divider';
 import { RecipesContext } from '../context/recipesContext';
 
 const NewRecipe = () => {
-    const recipes = useContext(RecipesContext);
+    const {rec, setRec} = useContext(RecipesContext);
+   
     
     const [newRecipeData, setNewRecipeData] = useState({
         title: "",
@@ -15,6 +16,9 @@ const NewRecipe = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        if (newRecipeData.keyImage === "") {
+            newRecipeData.keyImage = "/recipeImages/generalImage.jpg"
+        }
 
         const latestRecipe = {
             title: newRecipeData.title,
@@ -32,7 +36,7 @@ const NewRecipe = () => {
         })
         .then((r) => r.json())
         .then((newRecipe) => {
-            recipes.setRec([...recipes.rec, newRecipe]);
+            setRec([...rec, newRecipe]);
             setNewRecipeData({ title: "", keyImage: "", recipe: "", category: "" });
             setIsFormVisible(false); // Hide form upon successful submission
         });

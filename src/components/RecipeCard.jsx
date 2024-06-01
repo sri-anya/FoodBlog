@@ -11,11 +11,7 @@ function getDate() {
 
 const RecipeCard = ({ recipe }) => {
     const [currentDate, setCurrentDate] = useState(getDate());
-    console.log(recipe)
-    if (recipe.keyImage === "") {
-        console.log(recipe)
-        recipe.keyImage = "/recipeImages/generalImage.jpg"
-    }
+    
     const navigate = useNavigate();
     return (
 
