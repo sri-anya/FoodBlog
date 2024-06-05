@@ -1,15 +1,9 @@
-import React from 'react';
-import Navbar from './Navbar';
-import SubscriptionForm from './SubscriptionForm';
-import Footer from './Footer';
-import Background from './Background';
 import Subsection from './Subsection';
 
 const Contact = () => {
     return (
         <div>
-            <Background />
-            <Navbar />
+            
             <Subsection image="./mail.svg" message="Stay in Touch" />
             <div className="query-form flex gap-6 w-[60vw] mx-auto">
                 <div className="image m-10 py-32"><img width="800" height="1000" className='object-fill' src="/contactPageImage.jpg" alt="" /></div>
@@ -26,8 +20,7 @@ const Contact = () => {
                 </div>
 
             </div>
-            <SubscriptionForm />
-            <Footer />
+            
         </div>
     )
 }

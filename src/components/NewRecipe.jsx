@@ -1,16 +1,28 @@
-import React, { useState, useContext } from 'react';
+import React, { useState} from 'react';
 import Divider from './Divider';
-import { RecipesContext } from '../context/recipesContext';
+import {useOutletContext } from "react-router-dom";
+
+function getDate() {
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+    const today = new Date();
+    const month = monthNames[today.getMonth()];
+    const year = today.getFullYear();
+    const date = today.getDate();
+    return `${month} ${date}, ${year}`;
+}
 
 const NewRecipe = () => {
-    const {rec, setRec} = useContext(RecipesContext);
-   
+    const { rec, setRec } = useOutletContext();
+    const today = getDate()
     
     const [newRecipeData, setNewRecipeData] = useState({
         title: "",
         keyImage: "",
         recipe: "",
-        category: ""
+        category: "",
+        date_created:today
     });
     const [isFormVisible, setIsFormVisible] = useState(true); // State to manage form visibility
 
@@ -20,19 +32,13 @@ const NewRecipe = () => {
             newRecipeData.keyImage = "/recipeImages/generalImage.jpg"
         }
 
-        const latestRecipe = {
-            title: newRecipeData.title,
-            keyImage: newRecipeData.keyImage,
-            recipe: newRecipeData.recipe,
-            category: newRecipeData.category
-        };
 
         fetch("http://localhost:4000/recipes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(latestRecipe),
+            body: JSON.stringify(newRecipeData),
         })
         .then((r) => r.json())
         .then((newRecipe) => {

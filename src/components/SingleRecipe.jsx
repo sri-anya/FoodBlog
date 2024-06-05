@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import SubscriptionForm from './SubscriptionForm'
 import { useParams } from 'react-router-dom'
 import Divider from './Divider'
 
@@ -25,7 +22,7 @@ const SingleRecipe = () => {
     return (
         
         <div>
-            <Navbar />
+            
             <main>
                 <div className="container min-h-96  w-[69vw] mx-auto my-28  border-gray-800 border-[1px] p-10">
                     <h1 className='font-bold text-center text-3xl'>{recipe.title}</h1>
@@ -36,8 +33,6 @@ const SingleRecipe = () => {
 
                 </div>
             </main>
-            <SubscriptionForm />
-            <Footer />
 
         </div>
     )

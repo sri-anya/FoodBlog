@@ -4,7 +4,7 @@ import RecipeCard from './RecipeCard'
 const LatestRecipeContainer = ({ heading = "", recipes }) => {
    
     const recipeList = recipes.map((recipe) => {
-        return <RecipeCard key={recipe.title} recipe={recipe} />
+        return <RecipeCard key={recipe.id} recipe={recipe} />
     })
 
     return (

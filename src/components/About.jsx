@@ -1,13 +1,11 @@
 import React from 'react';
-import SubscriptionForm from './SubscriptionForm';
 import Subsection from './Subsection';
-import Footer from './Footer';
-import Navbar from './Navbar';
+
 
 const About = () => {
   return (
     <div>
-      <Navbar/>
+      
       <Subsection image="/cookware.svg" message="About Me"/>
       <main className='flex gap-20 px-44 py-28'>
         <div className="image h-[1000] w-[450]"><img width="450" height="500" className='object-contain' src="/chefImage.jpg" alt="" /></div>
@@ -21,8 +19,7 @@ const About = () => {
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae sit magnam officia, accusamus facere animi eligendi culpa dolore nesciunt ratione?</p>
         </div>
       </main>
-      <SubscriptionForm/>
-      <Footer/>
+     
     </div>
   )
 }
