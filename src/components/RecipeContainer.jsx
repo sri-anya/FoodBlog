@@ -3,7 +3,7 @@ import Subsection from './Subsection'
 import LatestRecipeContainer from './LatestRecipeContainer'
 import FilterRecipes from './FilterRecipes'
 import { useOutletContext } from "react-router-dom";
-
+import CategoryFilter from './CategoryFilter';
 
 const RecipeContainer = () => {
 
@@ -20,12 +20,26 @@ const RecipeContainer = () => {
     setSelectedRecipes(filteredRecipes)
   }
 
+  function handleCategoryFilter(selectedCategory){
+    if (selectedCategory=="All Recipes"){
+      setSelectedRecipes(rec)
+    }
+    else {
+      const filteredRecipes = rec.filter((recipe) => recipe.category.toLowerCase().includes(selectedCategory.toLowerCase()))
+      setSelectedRecipes(filteredRecipes)
+    }
+  }
+
   return (
     <div>
       
-      <Subsection image="/cookware.svg" message="All Recipes" />
+      <Subsection image="/cookware.svg" message="All my Recipes" />
+      <div className='flex justify-around w-[80vw] mx-auto items-center pt-5'>
+      <CategoryFilter onCategoryFilter={handleCategoryFilter}/>
       <FilterRecipes onSearch={handleSearch} />
-      {(rec).length > 0 ? <LatestRecipeContainer heading="Latest Recipes" recipes={selectedRecipes} /> : <h1 className='text-2xl font-semibold text-center p-10 animate-ping'>Loading...</h1>}
+      </div>
+      
+      {(rec).length > 0 ? <LatestRecipeContainer heading="" recipes={selectedRecipes} /> : <h1 className='text-2xl font-semibold text-center p-10 animate-ping'>Loading...</h1>}
       
     </div>
   )

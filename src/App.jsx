@@ -10,7 +10,6 @@ function App() {
 
   const [rec, setRec] = useState([])
 
-
   useEffect(() => {
 
     const fetchRecipes = async () => {
